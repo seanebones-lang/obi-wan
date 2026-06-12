@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "DFW Fan Compass",
+    "description": "Seu guia em tempo real para a Copa do Mundo 2026 em Dallas-Fort Worth. Encontre comida, bares, estacionamento, transporte e rotas."
+  },
+  "nav": {
+    "home": "Início",
+    "explore": "Explorar",
+    "matchDay": "Dia de Jogo",
+    "directions": "Rotas",
+    "essentials": "Essenciais",
+    "schedule": "Calendário"
+  },
+  "home": {
+    "heroTitle": "Bem-vindo a DFW",
+    "heroSubtitle": "Sua bússola para a Copa do Mundo 2026 no Texas",
+    "goingToMatch": "Vou a um Jogo",
+    "goingToMatchDesc": "Estacionamento, transporte, comida e bares",
+    "fanFestival": "Fan Festival",
+    "fanFestivalDesc": "Fair Park — entrada gratuita",
+    "justArrived": "Acabei de Chegar",
+    "justArrivedDesc": "Do aeroporto à cidade",
+    "exploreDFW": "Explorar DFW",
+    "exploreDFWDesc": "Mapa ao vivo de comida, bares e mais",
+    "matchesHosted": "9 jogos",
+    "semiFinal": "Incluindo a Semifinal",
+    "featuredZones": "Áreas em Destaque"
+  },
+  "explore": {
+    "title": "Explorar",
+    "nearMe": "Perto de Mim",
+    "searchPlaceholder": "Buscar lugares...",
+    "noResults": "Nenhum lugar encontrado. Tente outra categoria ou zona.",
+    "loading": "Buscando lugares próximos...",
+    "demoMode": "Modo demo — adicione chaves API para dados ao vivo",
+    "sortDistance": "Mais Próximo",
+    "sortPopular": "Popular",
+    "openNow": "Aberto agora",
+    "getDirections": "Como Chegar",
+    "viewOnMaps": "Ver no Google Maps",
+    "reviews": "avaliações",
+    "selectZone": "Escolher área"
+  },
+  "matchDay": {
+    "title": "Dia de Jogo",
+    "selectMatch": "Selecione seu jogo",
+    "transitTitle": "Como Chegar ao Estádio",
+    "transitStep1": "Pegue o Trinity Railway Express (TRE) da Victory Station no centro de Dallas ou Fort Worth Central Station.",
+    "transitStep2": "Desça em CentrePort/DFW Airport Station. Titulares de ingressos recebem ônibus gratuitos até o estádio.",
+    "transitStep3": "São 10 minutos a pé do hub de ônibus até o Dallas Stadium.",
+    "transitStep4": "Baixe o app GoPass para comprar passagens de TRE.",
+    "gopassLink": "Baixar GoPass",
+    "directionsToStadium": "Rotas ao Estádio",
+    "weatherAtKickoff": "Clima no Apito Inicial",
+    "parkingTip": "Chegue cedo — estacionamentos enchem rapidamente.",
+    "layersActive": "Mostrando estacionamento, comida e bares perto do estádio"
+  },
+  "directions": {
+    "title": "Rotas",
+    "origin": "De",
+    "destination": "Para",
+    "modeTransit": "Transporte",
+    "modeDriving": "Carro",
+    "modeWalking": "A Pé",
+    "getDirections": "Obter Rotas",
+    "loading": "Calculando rota...",
+    "openInMaps": "Abrir no Google Maps",
+    "presets": "Rotas Rápidas",
+    "presetAirportStadium": "Aeroporto DFW → Estádio",
+    "presetDowntownFestival": "Centro Dallas → Fan Festival",
+    "presetVictoryStadium": "Victory Station → Estádio",
+    "totalDuration": "Tempo total",
+    "totalDistance": "Distância"
+  },
+  "schedule": {
+    "title": "Calendário de Jogos",
+    "subtitle": "Todos os 9 jogos no Dallas Stadium, Arlington",
+    "stageGroup": "Fase de Grupos",
+    "stageRound32": "Dezesseis Avos de Final",
+    "stageRound16": "Oitavas de Final",
+    "stageSemi": "Semifinal",
+    "viewMatchDay": "Planejar Dia de Jogo"
+  },
+  "essentials": {
+    "title": "Essenciais para Visitantes",
+    "subtitle": "Tudo que você precisa saber em DFW",
+    "exploreOnMap": "Explorar no Mapa",
+    "gettingAround": {
+      "title": "Como Se Locomover",
+      "description": "Transporte, trens e rideshare em DFW",
+      "dartHeading": "Metrô Leve DART",
+      "dartBody": "O DART opera metrô leve em Dallas e subúrbios. As linhas Green e Orange servem a Victory Station.",
+      "treHeading": "Trinity Railway Express (TRE)",
+      "treBody": "O TRE conecta o centro de Dallas e Fort Worth. Em dias de jogo, vá até CentrePort/DFW Airport Station para ônibus gratuitos.",
+      "gopassHeading": "App GoPass",
+      "gopassBody": "Baixe o GoPass para comprar passagens de transporte no celular.",
+      "rideshareHeading": "Rideshare e Táxi",
+      "rideshareBody": "Uber e Lyft operam em todo DFW. No estádio, espere preços altos após os jogos.",
+      "gopassLink": "App GoPass",
+      "dartLink": "Site DART"
+    },
+    "knowBefore": {
+      "title": "Antes de Ir",
+      "description": "Dicas para visitantes internacionais",
+      "emergencyHeading": "Emergência",
+      "emergencyBody": "Disque 911 para polícia, bombeiros ou emergências médicas.",
+      "tippingHeading": "Gorjetas",
+      "tippingBody": "Gorjetas são esperadas: 18–20% em restaurantes, $1–2 por bebida em bares.",
+      "weatherHeading": "Clima (Junho–Julho)",
+      "weatherBody": "Verões quentes: 32–38°C. Mantenha-se hidratado e use protetor solar.",
+      "powerHeading": "Energia e Telefone",
+      "powerBody": "Tomadas tipo A/B (120V). Compre um chip pré-pago no aeroporto ou use eSIM."
+    },
+    "bbq": {
+      "title": "Rota do BBQ Texano",
+      "description": "Carnes defumadas e hospitalidade do sul",
+      "introHeading": "Por que BBQ em DFW?",
+      "introBody": "North Texas é famosa por brisket, costelas e linguiça defumados lentamente.",
+      "tipsHeading": "Dicas",
+      "tipsBody": "Lugares populares esgotam ao meio-dia. Vá antes do meio-dia nos fins de semana."
+    },
+    "deepEllum": {
+      "title": "Deep Ellum",
+      "description": "Música ao vivo e vida noturna",
+      "introHeading": "A Alma Musical de Dallas",
+      "introBody": "Deep Ellum é o distrito de entretenimento histórico de Dallas — murais, música ao vivo e bares."
+    },
+    "stockyards": {
+      "title": "Fort Worth Stockyards",
+      "description": "Patrimônio western e cultura caubói",
+      "introHeading": "Onde o Oeste Começa",
+      "introBody": "Os Stockyards oferecem rodeios, honky-tonks, BBQ e lojas de botas."
+    },
+    "official": {
+      "title": "Links Oficiais",
+      "description": "Ingressos, festival e turismo",
+      "introHeading": "Recursos Oficiais",
+      "introBody": "Obtenha ingressos e informações oficiais da cidade-sede.",
+      "fifaTickets": "Ingressos FIFA",
+      "fanFestival": "FIFA World Cup 26 Dallas",
+      "visitDallas": "Visit Dallas"
+    }
+  },
+  "anchors": {
+    "stadium": { "name": "Dallas Stadium", "description": "Arlington — 9 jogos da Copa" },
+    "fanFestival": { "name": "FIFA Fan Festival", "description": "Fair Park, Dallas — entrada grátis" },
+    "dfwAirport": { "name": "Aeroporto DFW", "description": "O aeroporto mais conectado do mundo" },
+    "loveField": { "name": "Dallas Love Field", "description": "Aeroporto perto do centro" },
+    "downtownDallas": { "name": "Centro de Dallas", "description": "Arte, gastronomia e Victory Station" },
+    "deepEllum": { "name": "Deep Ellum", "description": "Música, murais e vida noturna" },
+    "uptown": { "name": "Uptown Dallas", "description": "Restaurantes e bares a pé" },
+    "stockyards": { "name": "Fort Worth Stockyards", "description": "Distrito do patrimônio western" },
+    "victoryStation": { "name": "Victory Station", "description": "Partida TRE para dias de jogo" }
+  },
+  "categories": {
+    "restaurant": "Restaurantes",
+    "bar": "Bares",
+    "cafe": "Cafés",
+    "parking": "Estacionamento",
+    "lodging": "Hotéis",
+    "pharmacy": "Farmácia",
+    "atm": "Caixas Eletrônicos",
+    "convenience": "Conveniência"
+  },
+  "common": {
+    "back": "Voltar",
+    "close": "Fechar",
+    "loading": "Carregando...",
+    "error": "Algo deu errado",
+    "retry": "Tentar novamente",
+    "language": "Idioma"
+  }
+}

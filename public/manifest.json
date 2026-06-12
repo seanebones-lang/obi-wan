@@ -1,0 +1,26 @@
+{
+  "name": "DFW Fan Compass",
+  "short_name": "DFW Compass",
+  "description": "World Cup 2026 visitor guide for Dallas-Fort Worth",
+  "start_url": "/en",
+  "display": "standalone",
+  "background_color": "#060b18",
+  "theme_color": "#22c55e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "sports", "navigation"],
+  "lang": "en"
+}

@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "title": "DFW Fan Compass",
+    "description": "Your real-time guide for World Cup 2026 in Dallas-Fort Worth. Find food, bars, parking, transit, and directions."
+  },
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "matchDay": "Match Day",
+    "directions": "Directions",
+    "essentials": "Essentials",
+    "schedule": "Schedule"
+  },
+  "home": {
+    "heroTitle": "Welcome to DFW",
+    "heroSubtitle": "Your compass for World Cup 2026 in North Texas",
+    "goingToMatch": "Going to a Match",
+    "goingToMatchDesc": "Stadium parking, transit, food & bars",
+    "fanFestival": "Fan Festival",
+    "fanFestivalDesc": "Fair Park — free for all fans",
+    "justArrived": "Just Arrived",
+    "justArrivedDesc": "Airport to city directions",
+    "exploreDFW": "Explore DFW",
+    "exploreDFWDesc": "Live map of food, bars & more",
+    "matchesHosted": "9 matches hosted",
+    "semiFinal": "Including the Semi-Final",
+    "featuredZones": "Featured Areas"
+  },
+  "explore": {
+    "title": "Explore",
+    "nearMe": "Near Me",
+    "searchPlaceholder": "Search places...",
+    "noResults": "No places found. Try another category or zone.",
+    "loading": "Finding places nearby...",
+    "demoMode": "Demo mode — add API keys for live data",
+    "sortDistance": "Nearest",
+    "sortPopular": "Popular",
+    "openNow": "Open now",
+    "getDirections": "Get Directions",
+    "viewOnMaps": "View on Google Maps",
+    "reviews": "reviews",
+    "selectZone": "Choose area"
+  },
+  "matchDay": {
+    "title": "Match Day",
+    "selectMatch": "Select your match",
+    "transitTitle": "Getting to the Stadium",
+    "transitStep1": "Take the Trinity Railway Express (TRE) from Victory Station in downtown Dallas or Fort Worth Central Station.",
+    "transitStep2": "Exit at CentrePort/DFW Airport Station. Match ticket holders receive complimentary charter buses to the stadium bus hub.",
+    "transitStep3": "It's a 10-minute walk from the bus hub to Dallas Stadium.",
+    "transitStep4": "Download the GoPass app to purchase TRE tickets and get transit updates.",
+    "gopassLink": "Get GoPass App",
+    "directionsToStadium": "Directions to Stadium",
+    "weatherAtKickoff": "Weather at Kickoff",
+    "parkingTip": "Arrive early — stadium lots fill quickly on match days.",
+    "layersActive": "Showing parking, food & bars near stadium"
+  },
+  "directions": {
+    "title": "Directions",
+    "origin": "From",
+    "destination": "To",
+    "modeTransit": "Transit",
+    "modeDriving": "Driving",
+    "modeWalking": "Walking",
+    "getDirections": "Get Directions",
+    "loading": "Calculating route...",
+    "openInMaps": "Open in Google Maps",
+    "presets": "Quick Routes",
+    "presetAirportStadium": "DFW Airport → Stadium",
+    "presetDowntownFestival": "Downtown Dallas → Fan Festival",
+    "presetVictoryStadium": "Victory Station → Stadium",
+    "totalDuration": "Total time",
+    "totalDistance": "Distance"
+  },
+  "schedule": {
+    "title": "Match Schedule",
+    "subtitle": "All 9 matches at Dallas Stadium, Arlington",
+    "stageGroup": "Group Stage",
+    "stageRound32": "Round of 32",
+    "stageRound16": "Round of 16",
+    "stageSemi": "Semi-Final",
+    "viewMatchDay": "Plan Match Day"
+  },
+  "essentials": {
+    "title": "Visitor Essentials",
+    "subtitle": "Everything you need to know while visiting DFW",
+    "exploreOnMap": "Explore on Map",
+    "gettingAround": {
+      "title": "Getting Around",
+      "description": "Transit, trains, and rideshare in DFW",
+      "dartHeading": "DART Light Rail",
+      "dartBody": "Dallas Area Rapid Transit (DART) operates light rail across Dallas and suburbs. The Green and Orange lines serve Victory Station — your gateway to match-day TRE service.",
+      "treHeading": "Trinity Railway Express (TRE)",
+      "treBody": "TRE connects downtown Dallas and Fort Worth. On match days, take TRE to CentrePort/DFW Airport Station for free charter buses to the stadium (ticket holders).",
+      "gopassHeading": "GoPass App",
+      "gopassBody": "Download GoPass to buy transit tickets on your phone. It covers DART, TRE, and other regional transit agencies.",
+      "rideshareHeading": "Rideshare & Taxis",
+      "rideshareBody": "Uber and Lyft operate throughout DFW. At the stadium, expect surge pricing after matches — consider TRE or pre-book parking.",
+      "gopassLink": "GoPass App",
+      "dartLink": "DART Website"
+    },
+    "knowBefore": {
+      "title": "Know Before You Go",
+      "description": "Practical tips for international visitors",
+      "emergencyHeading": "Emergency",
+      "emergencyBody": "Dial 911 for police, fire, or medical emergencies. This works from any phone, even without a local SIM.",
+      "tippingHeading": "Tipping",
+      "tippingBody": "Tips are expected in the US: 18–20% at restaurants, $1–2 per drink at bars, and a few dollars for rideshare/taxi.",
+      "weatherHeading": "Weather (June–July)",
+      "weatherBody": "Expect hot Texas summers: 90–100°F (32–38°C). Stay hydrated, wear sunscreen, and plan indoor breaks during midday.",
+      "powerHeading": "Power & Phones",
+      "powerBody": "US outlets are Type A/B (120V). Pick up a prepaid SIM at the airport or use eSIM. Free Wi-Fi is common at hotels and cafés."
+    },
+    "bbq": {
+      "title": "Texas BBQ Trail",
+      "description": "Smoked meats and Southern hospitality",
+      "introHeading": "Why DFW BBQ?",
+      "introBody": "North Texas is legendary for brisket, ribs, and sausage smoked low and slow over oak and pecan wood. From classic joints to modern pitmasters, you'll find BBQ within minutes of downtown.",
+      "tipsHeading": "Tips",
+      "tipsBody": "Popular spots sell out by early afternoon. Go before noon on weekends. Many places are counter-service — grab a tray, find a seat, and enjoy."
+    },
+    "deepEllum": {
+      "title": "Deep Ellum",
+      "description": "Live music and nightlife district",
+      "introHeading": "The Soul of Dallas Music",
+      "introBody": "Deep Ellum is Dallas's historic entertainment district — murals, live music venues, craft cocktail bars, and late-night eats. A perfect pre- or post-match hangout."
+    },
+    "stockyards": {
+      "title": "Fort Worth Stockyards",
+      "description": "Western heritage and cowboy culture",
+      "introHeading": "Where the West Begins",
+      "introBody": "The Fort Worth Stockyards offer cattle drives, honky-tonks, BBQ, and boot shops. Experience authentic Texas culture just west of Dallas."
+    },
+    "official": {
+      "title": "Official Links",
+      "description": "Tickets, festival info, and tourism",
+      "introHeading": "Official Resources",
+      "introBody": "Get tickets, Fan Festival details, and official host city information from these trusted sources.",
+      "fifaTickets": "FIFA Tickets",
+      "fanFestival": "FIFA World Cup 26 Dallas",
+      "visitDallas": "Visit Dallas"
+    }
+  },
+  "anchors": {
+    "stadium": {
+      "name": "Dallas Stadium",
+      "description": "Arlington — 9 World Cup matches"
+    },
+    "fanFestival": {
+      "name": "FIFA Fan Festival",
+      "description": "Fair Park, Dallas — free entry"
+    },
+    "dfwAirport": {
+      "name": "DFW Airport",
+      "description": "World's most connected airport"
+    },
+    "loveField": {
+      "name": "Dallas Love Field",
+      "description": "Downtown-adjacent airport"
+    },
+    "downtownDallas": {
+      "name": "Downtown Dallas",
+      "description": "Arts, dining, and Victory Station"
+    },
+    "deepEllum": {
+      "name": "Deep Ellum",
+      "description": "Music, murals, and nightlife"
+    },
+    "uptown": {
+      "name": "Uptown Dallas",
+      "description": "Walkable dining and bars"
+    },
+    "stockyards": {
+      "name": "Fort Worth Stockyards",
+      "description": "Western heritage district"
+    },
+    "victoryStation": {
+      "name": "Victory Station",
+      "description": "TRE departure for match days"
+    }
+  },
+  "categories": {
+    "restaurant": "Restaurants",
+    "bar": "Bars",
+    "cafe": "Cafés",
+    "parking": "Parking",
+    "lodging": "Hotels",
+    "pharmacy": "Pharmacy",
+    "atm": "ATMs",
+    "convenience": "Convenience"
+  },
+  "common": {
+    "back": "Back",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "language": "Language"
+  }
+}
