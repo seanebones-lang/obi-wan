@@ -1,29 +1,9 @@
-export type DirectionStep = {
-  instruction: string;
-  distance: string;
-  duration: string;
-  travelMode: string;
-};
+import "server-only";
 
-export type DirectionLeg = {
-  distance: string;
-  duration: string;
-  steps: DirectionStep[];
-  departureTime?: string;
-  arrivalTime?: string;
-};
+import type { DirectionsResult } from "@/types/directions";
+import { getGoogleApiKey, hasGoogleApiKey } from "@/lib/google/api-key";
 
-export type DirectionsResult = {
-  summary: string;
-  legs: DirectionLeg[];
-  googleMapsUrl: string;
-};
-
-function getApiKey(): string {
-  const key = process.env.GOOGLE_MAPS_API_KEY;
-  if (!key) throw new Error("GOOGLE_MAPS_API_KEY is not configured");
-  return key;
-}
+export type { DirectionsResult, DirectionLeg, DirectionStep } from "@/types/directions";
 
 export async function getDirections(params: {
   origin: string;
@@ -32,7 +12,7 @@ export async function getDirections(params: {
   departureTime?: number;
   language: string;
 }): Promise<DirectionsResult> {
-  const apiKey = getApiKey();
+  const apiKey = getGoogleApiKey();
   const searchParams = new URLSearchParams({
     origin: params.origin,
     destination: params.destination,
@@ -127,6 +107,4 @@ export function getMockDirections(
   };
 }
 
-export function hasGoogleApiKey(): boolean {
-  return Boolean(process.env.GOOGLE_MAPS_API_KEY);
-}
+export { hasGoogleApiKey };

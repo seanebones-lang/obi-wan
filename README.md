@@ -57,8 +57,8 @@ Google Places Nearby Search bills per request. The app caches responses (30 min 
    - Build command: `npm run build`
    - Plugin: `@netlify/plugin-nextjs`
 4. Add environment variables under **Site settings → Environment variables**:
-   - `GOOGLE_MAPS_API_KEY`
-   - `NEXT_PUBLIC_GOOGLE_MAPS_KEY`
+   - `NEXT_PUBLIC_GOOGLE_MAPS_KEY` — your Google Maps browser key (required)
+   - `GOOGLE_MAPS_API_KEY` — optional separate server key; **do not set if it’s the same value as the public key** (Netlify secrets scanning will fail the build). Server API routes fall back to `NEXT_PUBLIC_GOOGLE_MAPS_KEY`.
 5. Deploy. Add your Netlify URL to Google Cloud **HTTP referrer** restrictions, e.g. `https://your-site.netlify.app/*`
 
    If the build fails with "secrets scanning found secrets", Netlify is flagging `NEXT_PUBLIC_GOOGLE_MAPS_KEY` in client bundles — this is expected. The repo's `netlify.toml` sets `SECRETS_SCAN_OMIT_KEYS` for that variable. Restrict the key by referrer in Google Cloud instead.

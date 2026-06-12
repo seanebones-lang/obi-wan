@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { setOptions, importLibrary } from "@googlemaps/js-api-loader";
-import type { PlaceResult } from "@/lib/google/places";
+import type { PlaceResult } from "@/types/places";
 import type { AnchorZone } from "@/data/anchors";
 
 let mapsOptionsSet = false;

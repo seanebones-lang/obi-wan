@@ -1,20 +1,11 @@
-const PLACES_BASE = "https://places.googleapis.com/v1";
+import "server-only";
 
-export type PlaceResult = {
-  id: string;
-  name: string;
-  address: string;
-  lat: number;
-  lng: number;
-  rating?: number;
-  userRatingCount?: number;
-  googleMapsUri?: string;
-  photoUrl?: string;
-  types?: string[];
-  priceLevel?: string;
-  openNow?: boolean;
-  weekdayDescriptions?: string[];
-};
+import type { PlaceResult } from "@/types/places";
+import { getGoogleApiKey, hasGoogleApiKey } from "@/lib/google/api-key";
+
+export type { PlaceResult };
+
+const PLACES_BASE = "https://places.googleapis.com/v1";
 
 const NEARBY_FIELD_MASK = [
   "places.id",
@@ -46,12 +37,6 @@ const DETAILS_FIELD_MASK = [
   "editorialSummary",
   "reviews",
 ].join(",");
-
-function getApiKey(): string {
-  const key = process.env.GOOGLE_MAPS_API_KEY;
-  if (!key) throw new Error("GOOGLE_MAPS_API_KEY is not configured");
-  return key;
-}
 
 function mapPlace(place: Record<string, unknown>, apiKey: string): PlaceResult {
   const displayName = place.displayName as { text?: string } | undefined;
@@ -95,7 +80,7 @@ export async function searchNearby(params: {
   rankPreference?: "DISTANCE" | "POPULARITY";
   maxResultCount?: number;
 }): Promise<PlaceResult[]> {
-  const apiKey = getApiKey();
+  const apiKey = getGoogleApiKey();
 
   const response = await fetch(`${PLACES_BASE}/places:searchNearby`, {
     method: "POST",
@@ -134,7 +119,7 @@ export async function textSearch(params: {
   radiusMeters: number;
   languageCode: string;
 }): Promise<PlaceResult[]> {
-  const apiKey = getApiKey();
+  const apiKey = getGoogleApiKey();
 
   const response = await fetch(`${PLACES_BASE}/places:searchText`, {
     method: "POST",
@@ -169,7 +154,7 @@ export async function getPlaceDetails(
   placeId: string,
   languageCode: string,
 ): Promise<PlaceResult & { editorialSummary?: string; reviews?: { text?: string; rating?: number }[] }> {
-  const apiKey = getApiKey();
+  const apiKey = getGoogleApiKey();
   const id = placeId.startsWith("places/") ? placeId : `places/${placeId}`;
 
   const response = await fetch(
@@ -241,6 +226,4 @@ export function getMockPlaces(
   }));
 }
 
-export function hasGoogleApiKey(): boolean {
-  return Boolean(process.env.GOOGLE_MAPS_API_KEY);
-}
+export { hasGoogleApiKey };

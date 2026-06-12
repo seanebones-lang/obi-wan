@@ -9,3 +9,6 @@
   NODE_VERSION = "20"
   # NEXT_PUBLIC_* vars are intentionally inlined into client JS (Google Maps browser key)
   SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_GOOGLE_MAPS_KEY"
+
+# Netlify: set ONLY NEXT_PUBLIC_GOOGLE_MAPS_KEY (delete GOOGLE_MAPS_API_KEY).
+# Server routes fall back to the public key via lib/google/api-key.ts.

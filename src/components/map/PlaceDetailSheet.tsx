@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import type { PlaceResult } from "@/lib/google/places";
+import type { PlaceResult } from "@/types/places";
 import { Button } from "@/components/ui/button";
 import { Star, MapPin, Clock, X, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";

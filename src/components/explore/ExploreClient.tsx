@@ -5,7 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { useSearchParams } from "next/navigation";
 import { anchors, getAnchor } from "@/data/anchors";
 import { anchorTranslationKeys } from "@/data/anchor-keys";
-import type { PlaceResult } from "@/lib/google/places";
+import type { PlaceResult } from "@/types/places";
 import { MapCanvas } from "@/components/map/MapCanvas";
 import { CategoryFilters } from "@/components/map/CategoryFilters";
 import { PlaceDetailSheet, PlaceList } from "@/components/map/PlaceDetailSheet";

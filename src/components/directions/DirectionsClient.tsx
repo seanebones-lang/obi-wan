@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { getAnchor } from "@/data/anchors";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import type { DirectionsResult } from "@/lib/google/directions";
+import type { DirectionsResult } from "@/types/directions";
 import { Navigation, ExternalLink, AlertCircle, Loader2 } from "lucide-react";
 
 const presets = [
