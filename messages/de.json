@@ -169,5 +169,10 @@
     "error": "Etwas ist schiefgelaufen",
     "retry": "Erneut versuchen",
     "language": "Sprache"
+  },
+  "footer": {
+    "welcome": "Willkommen in DFW! Ein Service von",
+    "company": "NextEleven LLC",
+    "coffee": "Spendier uns einen Kaffee"
   }
 }

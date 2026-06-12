@@ -22,7 +22,7 @@ export function PlaceDetailSheet({
   if (!place) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-16 z-40 mx-auto max-w-lg animate-in slide-in-from-bottom duration-300">
+    <div className="fixed inset-x-0 bottom-36 z-40 mx-auto max-w-lg animate-in slide-in-from-bottom duration-300">
       <div className="mx-3 rounded-2xl border border-border bg-background shadow-2xl">
         <div className="relative">
           {place.photoUrl ? (

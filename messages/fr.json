@@ -169,5 +169,10 @@
     "error": "Une erreur s'est produite",
     "retry": "Réessayer",
     "language": "Langue"
+  },
+  "footer": {
+    "welcome": "Bienvenue à DFW ! Proposé par",
+    "company": "NextEleven LLC",
+    "coffee": "Offrez-nous un café"
   }
 }

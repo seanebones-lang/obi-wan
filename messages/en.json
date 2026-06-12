@@ -196,5 +196,10 @@
     "error": "Something went wrong",
     "retry": "Try again",
     "language": "Language"
+  },
+  "footer": {
+    "welcome": "Welcome to DFW! Courtesy of",
+    "company": "NextEleven LLC",
+    "coffee": "Buy us a coffee"
   }
 }
