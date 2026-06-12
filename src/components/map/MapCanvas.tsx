@@ -39,6 +39,21 @@ export function MapCanvas({
   useEffect(() => {
     if (!apiKey) return;
 
+    const priorAuthFailure = window.gm_authFailure;
+    window.gm_authFailure = () => {
+      setMapError(
+        "Google Maps blocked this site. Enable Maps JavaScript API and allow http://localhost:3000/* in your API key HTTP referrer restrictions.",
+      );
+    };
+
+    return () => {
+      window.gm_authFailure = priorAuthFailure;
+    };
+  }, [apiKey]);
+
+  useEffect(() => {
+    if (!apiKey) return;
+
     let cancelled = false;
 
     async function bootstrapMap() {
@@ -65,8 +80,14 @@ export function MapCanvas({
         });
 
         mapInstance.current.addListener("click", () => onMapClick?.());
-      } catch {
-        if (!cancelled) setMapError("Failed to load map");
+      } catch (err) {
+        if (!cancelled) {
+          const message =
+            err instanceof Error ? err.message : "Unknown error";
+          setMapError(
+            `Failed to load map: ${message}. Enable Maps JavaScript API and add http://localhost:3000/* to key referrers.`,
+          );
+        }
       }
     }
 
@@ -130,10 +151,15 @@ export function MapCanvas({
   if (mapError) {
     return (
       <div className={`flex items-center justify-center bg-surface-elevated ${className}`}>
-        <div className="text-center p-6">
+        <div className="text-center p-6 max-w-sm">
           <div className="text-4xl mb-2">🗺️</div>
           <p className="text-sm text-muted">{mapError}</p>
-          <p className="text-xs text-muted mt-2">Places list still works below</p>
+          <p className="text-xs text-muted mt-3 leading-relaxed">
+            In Google Cloud Console: enable <strong>Maps JavaScript API</strong>, then
+            under Credentials → your key → HTTP referrers, add{" "}
+            <code className="text-accent">http://localhost:3000/*</code>
+          </p>
+          <p className="text-xs text-muted mt-2">Places list below still works.</p>
         </div>
       </div>
     );
