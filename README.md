@@ -49,13 +49,34 @@ Google Places Nearby Search bills per request. The app caches responses (30 min 
 - Google Maps JS API + Places API (New) + Directions API
 - Serwist (PWA)
 
+## Deploy to Netlify (recommended)
+
+1. Push this repo to GitHub.
+2. Go to [app.netlify.com](https://app.netlify.com) → **Add new site** → **Import from Git**.
+3. Select the repo and use these settings (auto-detected from `netlify.toml`):
+   - Build command: `npm run build`
+   - Plugin: `@netlify/plugin-nextjs`
+4. Add environment variables under **Site settings → Environment variables**:
+   - `GOOGLE_MAPS_API_KEY`
+   - `NEXT_PUBLIC_GOOGLE_MAPS_KEY`
+5. Deploy. Add your Netlify URL to Google Cloud **HTTP referrer** restrictions, e.g. `https://your-site.netlify.app/*`
+
+Or deploy from the CLI:
+
+```bash
+npx netlify-cli login
+npx netlify-cli init
+npx netlify-cli env:import .env.local   # optional, imports local keys
+npx netlify-cli deploy --build --prod
+```
+
 ## Deploy to Vercel
 
 ```bash
 npx vercel
 ```
 
-Set environment variables in the Vercel dashboard. No extra config needed.
+Set environment variables in the Vercel dashboard. Requires an active Vercel billing account.
 
 ## Project Structure
 
