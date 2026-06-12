@@ -30,7 +30,7 @@ export function TransitCard() {
       </ol>
       <Button variant="outline" asChild className="w-full">
         <a
-          href="https://www.dart.org/guide/gopass"
+          href="https://pass.dart.org/"
           target="_blank"
           rel="noopener noreferrer"
         >

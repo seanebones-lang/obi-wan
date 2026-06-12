@@ -35,7 +35,7 @@ export const essentialTopics: EssentialTopic[] = [
     externalLinks: [
       {
         labelKey: "essentials.gettingAround.gopassLink",
-        url: "https://www.dart.org/guide/gopass",
+        url: "https://pass.dart.org/",
       },
       {
         labelKey: "essentials.gettingAround.dartLink",
